@@ -73,7 +73,6 @@ ${dcos_staged_package_storage_uri == "" ? "" : dcos_package_storage_uri == "" ? 
 ${dcos_staged_package_storage_uri == "" ? "" : "  staged_package_storage_uri: ${dcos_staged_package_storage_uri}"}
 ${dcos_package_storage_uri == "" ? "" : "  package_storage_uri: ${dcos_package_storage_uri}"}
 EOF
-
 curl -o dcos_generate_config.${dcos_version}.sh ${dcos_download_path}
 cp /tmp/ip-detect genconf/.
 cp /tmp/ip-detect-public genconf/.

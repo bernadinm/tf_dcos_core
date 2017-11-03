@@ -73,6 +73,7 @@ ${dcos_staged_package_storage_uri == "" ? "" : dcos_package_storage_uri == "" ? 
 ${dcos_staged_package_storage_uri == "" ? "" : "  staged_package_storage_uri: ${dcos_staged_package_storage_uri}"}
 ${dcos_package_storage_uri == "" ? "" : "  package_storage_uri: ${dcos_package_storage_uri}"}
 EOF
+
 cp /tmp/ip-detect genconf/.
 cp /tmp/ip-detect-public genconf/.
 OVERRIDE_PREVIOUS_DCOS_VERSION=${dcos_previous_version}
