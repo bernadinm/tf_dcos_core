@@ -1,8 +1,7 @@
 #!/bin/sh
 
-# Install Agent Node
+# Install Public Agent Node
 mkdir /tmp/dcos && cd /tmp/dcos
 /usr/bin/curl -O ${bootstrap_private_ip}:${dcos_bootstrap_port}/dcos_install.sh
-bash dcos_install.sh slave
+bash dcos_install.sh slave_public
 # Agent Node End
-
