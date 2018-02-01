@@ -75,7 +75,7 @@ ${dcos_package_storage_uri == "" ? "" : "  package_storage_uri: ${dcos_package_s
 EOF
 curl -o dcos_generate_config.${dcos_version}.sh ${dcos_download_path}
 cp /tmp/ip-detect genconf/.
-cp /tmp/ip-detect-public genconf/.
+cp /tmp/public-ip-detect genconf/.
 bash dcos_generate_config.${dcos_version}.sh
 docker rm -f $(docker ps -a -q -f ancestor=nginx)
 docker run -d -p ${dcos_bootstrap_port}:80 -v $PWD/genconf/serve:/usr/share/nginx/html:ro nginx
