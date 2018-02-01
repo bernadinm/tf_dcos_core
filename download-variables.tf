@@ -27,6 +27,5 @@ variable "dcos_download_path" {
    "1.10.0"     = "https://downloads.dcos.io/dcos/stable/1.10.0/dcos_generate_config.sh"
    "1.10.1"     = "https://downloads.dcos.io/dcos/stable/1.10.1/dcos_generate_config.sh"
    "1.10.2"     = "https://downloads.dcos.io/dcos/stable/1.10.2/dcos_generate_config.sh"
-   "1.10.3-sg"  = "https://sgpublic.blob.core.windows.net/files/1_10_3_sg_dcos_generate_config.sh"
   }
 }
