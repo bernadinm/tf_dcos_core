@@ -1,4 +1,4 @@
 variable "dcos_version" {
- default = ""
- description = "DCOS Version"
+  default     = ""
+  description = "DCOS Version"
 }
